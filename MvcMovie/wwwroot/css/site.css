@@ -1,0 +1,49 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/* --- Custom styling --- */
+
+/* Padding so entered text isn't jammed against the input border */
+input,
+select,
+textarea {
+  padding: 0.375rem 0.75rem;
+  margin: 0.15rem 0.25rem;
+}
+
+/* Material-Design style top app bar (Bootstrap navbar, restyled) */
+.material-appbar {
+  background-color: #1976d2; /* Material/MUI primary blue */
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2),
+              0 4px 5px 0 rgba(0, 0, 0, .14),
+              0 1px 10px 0 rgba(0, 0, 0, .12);
+}
